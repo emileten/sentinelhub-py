@@ -108,7 +108,7 @@ class SafeProduct(AwsProduct):
         """
         :return: name of main folder
         """
-        return f"{self.product_id}.SAFE"
+        return f"{self.product_id.replace('.SAFE', '')}.SAFE"
 
     def get_datastrip_list(self) -> List[Tuple[str, str]]:
         """

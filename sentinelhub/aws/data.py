@@ -335,7 +335,7 @@ class AwsProduct(AwsData):
                           If parameter is set to `None` the list will be set automatically.
         :param config: A custom instance of config class to override parameters from the saved configuration.
         """
-        self.product_id = product_id.split(".")[0]
+        self.product_id = product_id
         self.tile_list = self.parse_tile_list(tile_list)
 
         self.data_collection = self.get_data_collection()
